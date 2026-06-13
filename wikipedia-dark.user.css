@@ -6163,14 +6163,19 @@
   }
 }
 
+@-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
+               regexp("https?:\/\/wiki\.(archlinux|mozilla|nixos)\.(org|jp)\/.*$"),
+               regexp("https?:\/\/wikiless\.org\/.*$") {
+  figure[typeof~="mw:File/Thumb"] figcaption,
+  figure[typeof~="mw:File/Frame"] figcaption {
+    color: var(--white) !important;
+  }
+}
+
 @-moz-document regexp("https?:\/\/pt\.wikipedia\.org\/.*") {
   td.MainPageBG[style*="background-color:#f2e0ce"] {
     background-color: var(--gray-2) !important;
     color: var(--gray-c) !important;
-  }
-  figure[typeof~="mw:File/Thumb"] figcaption,
-  figure[typeof~="mw:File/Frame"] figcaption {
-    color: var(--white) !important;
   }
   [style*="color:#000"],
   [style*="color: #000"],
