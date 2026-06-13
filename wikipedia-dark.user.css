@@ -6170,22 +6170,12 @@
   figure[typeof~="mw:File/Frame"] figcaption {
     color: var(--white) !important;
   }
-}
-
-@-moz-document regexp("https?:\/\/pt\.wikipedia\.org\/.*") {
   td.MainPageBG[style*="background-color:#f2e0ce"] {
     background-color: var(--gray-2) !important;
     color: var(--gray-c) !important;
   }
-  [style*="color:#000"],
-  [style*="color: #000"],
-  [style*="color:black"],
-  [style*="color: black"],
-  [style*="color:#000000"],
-  [style*="color: #000000"] {
-    color: var(--white) !important;
-  }
 }
+
 @-moz-document domain("wikipedia.org") {
   /*** Navigation menu logo ***/
   #p-logo a {
