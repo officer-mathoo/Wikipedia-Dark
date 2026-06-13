@@ -6331,10 +6331,6 @@
   .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
     background-color: initial;
   }
-  td.MainPageBG[style*="background-color:#f2e0ce"] {
-    background-color: var(--gray-2) !important;
-    color: var(--gray-c) !important;
-  }
 }
 @-moz-document regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   #p-logo .mw-wiki-logo {
@@ -6526,10 +6522,6 @@
   }
   .mw-parser-output .mp-frame {
     box-shadow: 0 0 .3em var(--gray-7);
-    }
-  td.MainPageBG[style*="background-color:#f2e0ce"] {
-    background-color: var(--gray-2) !important;
-    color: var(--gray-c) !important;
       
   }
 }
